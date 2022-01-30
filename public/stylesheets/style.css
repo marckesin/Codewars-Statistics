@@ -9,6 +9,21 @@
 
 body {
   background-color: var(--bs-yellow-100);
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url("/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 h1,
@@ -24,4 +39,8 @@ a {
   /* text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000,
     0px -2px 0 #000, 6px 6px 0px rgba(0, 0, 0, 0); */
+}
+
+.teste {
+  background-image: url("/images/background.jpg");
 }
