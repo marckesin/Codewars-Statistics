@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
     <title>Codewars Statistics</title>
 
     <!-- Bootstrap -->
@@ -15,56 +28,69 @@
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
-  <body class="text-center text-white bg-dark h-100" cz-shortcut-listen="true">
-    <div class="col col-md-9 d-flex h-100 flex-column mx-auto p-3">
+  <body class="h-100" cz-shortcut-listen="true">
+    <div class="col col-md-10 d-flex h-100 flex-column mx-auto p-3">
       <header class="mb-auto">
         <div>
           <nav class="nav justify-content-between">
-            <h3 class="float-md-start mb-0">Cover</h3>
+            <!-- <h3 class="float-md-start mb-0">Code:</h3> -->
+            <a href="/">
+              <img src="images/logo.png" alt="Logo" width="150" />
+            </a>
             <a
-              class="nav-link active"
+              class="nav-link active text-dark fs-4 fw-bold"
               aria-current="page"
               href="https://codewars.com"
               target="_blank"
+              style="z-index: 999"
               >codewars.com</a
             >
           </nav>
         </div>
       </header>
 
-      <main class="px-3">
-        <h1 class="display-2">
-          code<span class="text-info fw-bold">WARS</span>
-        </h1>
-        <p class="lead mb-5 mt-0">
+      <main class="row flex-md-row flex-column px-3 py-5">
+        <div class="col col-lg-6 col-md-8 com-sm-10 ps-0">
+          <h1 class="display-3 text-white fw-bold text-heading">Statistics</h1>
+          <h2 class="text-dark fs-3 fw-bold mb-5 mt-0">
+            Quer descobrir suas estatísticas do codewars? Quais desafios
+            completados, sua posição no rank geral, skills, clans, seu rank nas
+            linguagens de programação?
+          </h2>
+          <!-- <p class="lead mb-5 mt-0">
           Quer descobrir suas estatísticas do codewars? Quais desafios
           completados, sua posição no rank geral, skills, clans, seu rank nas
           linguagens de programação?
-        </p>
-        <form action="/" method="post">
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              name="user"
-              id="user"
-              placeholder="Username ou ID"
-              aria-label="Username ou ID"
-              aria-describedby="button-addon2"
-            />
-            <button
-              class="btn btn-info fw-bold"
-              type="submit"
-              id="button-addon2"
-            >
-              Buscar
-            </button>
-          </div>
-        </form>
+          </p> -->
+          <form action="/" method="post">
+            <div class="input-group mb-3">
+              <input
+                type="search"
+                class="form-control"
+                name="user"
+                id="user"
+                placeholder="Username ou ID"
+                aria-label="Username ou ID"
+                aria-describedby="button-addon2"
+                required
+              />
+              <button
+                class="btn btn-dark text-light fw-bold"
+                type="submit"
+                id="button-addon2"
+              >
+                Buscar
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col col-lg-6 col-md-4 col-sm-2 shadow- view">
+          <img class="img-fluid" src="images/frame.png" alt="" />
+        </div>
       </main>
 
       <footer class="mt-auto text-white-50">
-        <p class="text-center text-mediumgray mb-0">
+        <p class="text-center text-muted mb-0">
           © <%= new Date().getFullYear() %> Codewars Statistics
         </p>
       </footer>

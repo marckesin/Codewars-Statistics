@@ -28,8 +28,7 @@ app.post("/", (req, res) => {
   axios
     .get(`https://www.codewars.com/api/v1/users/${user}`)
     .then(response => {
-      const data = JSON.stringify(response.data);
-      res.send(data);
+      res.render("index", { data: response.data });
     })
     .catch(error => {
       console.log(error);
