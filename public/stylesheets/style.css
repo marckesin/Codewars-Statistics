@@ -14,7 +14,7 @@ body {
 
 body::after {
   content: "";
-  background: url("/images/background.jpg");
+  background: url("/images/background-2.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.3;
@@ -28,9 +28,32 @@ body::after {
 
 h1,
 h2,
+h3,
+h4,
+h5,
 p,
 a {
   font-family: "Comfortaa", cursive;
+}
+
+.card {
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  /* border: 4px solid #000000; */
+  -webkit-box-shadow: 0px 45px 35px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 45px 35px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 45px 35px -9px rgba(0, 0, 0, 0.75);
+
+  background: transparent;
+  backdrop-filter: blur(4px);
+}
+
+.text-card {
+  color: #fff;
+  /* text-shadow: -1px -1px 0 #000; */
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .text-heading {
@@ -41,6 +64,560 @@ a {
     0px -2px 0 #000, 6px 6px 0px rgba(0, 0, 0, 0); */
 }
 
-.teste {
-  background-image: url("/images/background.jpg");
+@media (min-width: 991px) {
+  .animated {
+    position: relative;
+    top: -15%;
+    left: 0;
+  }
+}
+
+svg#freepik_stories-code-typing:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #freepik--Keyboard--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown,
+    1.5s Infinite linear wind;
+  animation-delay: 0s, 1s;
+}
+svg#freepik_stories-code-typing.animated #freepik--Hands--inject-4 {
+  animation: 1.5s Infinite linear shake;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #elgcuzi9ei556 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #elhbcwdybzcun {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.06666666666666667s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el6fdcmmjnv3f {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.13333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elyxdd2kzaxw {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elrulyk4j78ta {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.26666666666666666s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elvhhc7vckr4r {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.3333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elpj91mp0o6f {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el8zadfclgrqr {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.4666666666666667s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el9yc7cqvibil {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.5333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elmgq6bi64op {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el8xm0w0tcr4j {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.6666666666666666s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elripu1d1p3xi {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.7333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elpu5ti3imyyr {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elic4bpip57mh {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.8666666666666667s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el4o8g4o3u1a7 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.9333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #freepik--Coffee--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn,
+    1.5s Infinite linear wind;
+  animation-delay: 0s, 1s;
+}
+svg#freepik_stories-code-typing.animated #elmj3s0n2j0f {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #el2h98dqqjyt8 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.015873015873015872s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eljfl11qzvbi {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.031746031746031744s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elcquuob46qio {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.047619047619047616s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elw82wrjin68o {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.06349206349206349s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el83m9kl2uxuk {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.07936507936507936s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eld6cy335wqsv {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.09523809523809523s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elov5jfryy9ne {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.1111111111111111s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el1u8nlmqitb {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.12698412698412698s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elugdfh8iq4z8 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.14285714285714285s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elpxq0xo2qhfn {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.15873015873015872s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elij51jzdi9l {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.1746031746031746s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el74ag17ny0sj {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.19047619047619047s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el88m5oi2y327 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.20634920634920634s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elaljbr7nyta9 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.2222222222222222s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elo50tugqnlm {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.23809523809523808s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el0awapetex7n {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.25396825396825395s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elpnt8zkc5ng {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.2698412698412698s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el9zwroiplszi {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.2857142857142857s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elmpufxj1hp8d {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.30158730158730157s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eljehywidgh78 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.31746031746031744s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elcdt2jcfrn3g {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.3333333333333333s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el5vrebwzdijy {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.3492063492063492s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el91mdlxc8gwf {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.36507936507936506s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #ellxfi4ev6vs {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.38095238095238093s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el4a0rowrnk5p {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.3968253968253968s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elswsq0q1jvn {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.4126984126984127s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eljgkjppkrcma {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.42857142857142855s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elna3c1grm5em {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.4444444444444444s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el6zgwej5qwwn {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.4603174603174603s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el86yuwe3a0nb {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.47619047619047616s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eln2xvchycaj {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.49206349206349204s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el12wfkz7u8mt {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5079365079365079s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elu6yuqrz99kj {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5238095238095237s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elv0q0yfalmul {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5396825396825397s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el5tmu3459kp4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5555555555555556s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eltkfwegq0p4e {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5714285714285714s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eldb17y37vxb {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5873015873015872s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el9oceqp6r6t {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6031746031746031s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el7wmzw3e5wtt {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6190476190476191s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el45t2njq1koj {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6349206349206349s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elvr0rqnel3mm {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6507936507936507s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elnqg08cqw38 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6666666666666666s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elmhksjtd09s {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6825396825396826s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el07ulim8c06sn {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.6984126984126984s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elmnnsbnz5raj {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.7142857142857142s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elw2gjykl2dwt {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.7301587301587301s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el0g5w2xtv7gs {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.746031746031746s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elytv6tp9fcuk {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.7619047619047619s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elpeakwdldp9 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.7777777777777777s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el82pffgdv18o {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.7936507936507936s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elm0ksy3nljhb {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.8095238095238095s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el3hylva3eywh {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.8253968253968254s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elhyn40f5nok {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.8412698412698412s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eltkhrxx7kb2i {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.8571428571428571s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elc4ss2u4gn5u {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.873015873015873s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eljbml116tk1 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.8888888888888888s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el7chtlqb61yx {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9047619047619047s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elj8to5us4uv {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9206349206349206s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el1hhoxkk5mrmi {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9365079365079365s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elfpjqnwk4olm {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9523809523809523s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el93007qha7wb {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9682539682539681s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eli2paorfpuea {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.9841269841269841s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #freepik--Monitor--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-4 {
+  animation: 1.5s Infinite linear heartbeat;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #elhr9ephq39rm {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #el47ah6ivvllj {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.05s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #eluaofma7agss {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #ellng49c6mlw {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.15000000000000002s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el1lmjvzxdh83 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elxyh3n1zar3 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.25s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #el1cfoc247sa5 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.30000000000000004s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elmvn30ddzkv9 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.35000000000000003s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elszv7j1fj9y {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #elf4st5lncta {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.45s;
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #freepik--Mouse--inject-4 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

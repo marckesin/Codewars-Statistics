@@ -20,21 +20,39 @@ app.use(compression());
 
 // [GET]
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { data: false });
 });
 
 // [POST]
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
   const { user } = req.body;
+  let challenges;
+
+  await axios
+    .get(
+      `https://www.codewars.com/api/v1/users/${user}/code-challenges/completed?page=0`,
+    )
+    .then(response => {
+      challenges = response.data.data;
+    })
+    .catch(error => {
+      console.log(error);
+    });
 
   axios
     .get(`https://www.codewars.com/api/v1/users/${user}`)
     .then(response => {
-      res.render("index", { data: response.data });
+      const languages = Object.keys(response.data.ranks.languages);
+
+      res.render("index", {
+        data: response.data,
+        languages: languages,
+        challenges: challenges,
+      });
     })
     .catch(error => {
       console.log(error);
-      res.render("error");
+      res.render("index", { data: false });
     });
 });
 
