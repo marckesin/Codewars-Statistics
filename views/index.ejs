@@ -53,7 +53,7 @@
               aria-current="page"
               href="https://codewars.com"
               target="_blank"
-              style="position: relative; z-index: 999"
+              rel="noopener noreferrer"
               >codewars.com
             </a>
           </nav>
@@ -61,7 +61,6 @@
       </header>
 
       <main>
-        <!-- <section class="row flex-md-row flex-column px-3 py-5"> -->
         <section class="d-md-flex py-5 px-1">
           <div class="col col-lg-5 ps-0">
             <h1 class="display-3 text-white fw-bold text-heading">
@@ -3677,129 +3676,314 @@
         </section>
 
         <% if(data) { %>
-        <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-          <div class="col px-3">
-            <div class="card border border-dark border-2">
-              <img
-                src="/images/code-typing-rafiki.png"
-                class="card-img-top border-bottom border-dark"
-                alt="Code Typing Rafiki Image"
-              />
+        <h2
+          class="display-5 text-white fw-bold text-heading border-bottom border-dark pb-3"
+          data-aos="flip-right"
+          data-aos-duration="800"
+        >
+          Estatísticas gerais
+        </h2>
+        <section
+          class="row row-cols-2 row-cols-md-2 row-cols-lg-4 py-4 mb-5 g-3"
+        >
+          <div>
+            <div
+              class="card bg-dark mb-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">username</p>
+              </div>
               <div class="card-body">
-                <p class="card-title text-dark mb-0">username</p>
-                <h5 class="card-text fs-3 text-card"><%= data.username %></h5>
-                <p class="card-title text-dark mb-0">name</p>
-                <h5 class="card-text fs-3 text-card"><%= data.name %></h5>
-                <p class="card-title text-dark mb-0">honor</p>
-                <h5 class="card-text fs-3 text-card"><%= data.honor %></h5>
+                <h4 class="card-text fs-2 text-card">
+                  <i class="far fa-user text-warning me-2"></i><%= data.username
+                  %>
+                </h4>
+              </div>
+            </div>
+
+            <div
+              class="card bg-dark mb-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">nome</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="far fa-id-card text-warning me-2"></i><%= data.name
+                  %>
+                </h4>
               </div>
             </div>
           </div>
-          <div class="col px-3">
-            <div class="card bg-dark">
-              <img
-                src="/images/programmer-rafiki.png"
-                class="card-img-top border-bottom border-warning"
-                alt="Programmer Rafiki Image"
-              />
+
+          <div>
+            <div
+              class="card d-flex flex-row bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div
+                class="card-header d-flex flex-column justify-content-center"
+              >
+                <p
+                  class="text-warning fs-2 fw-bold m-0"
+                  style="writing-mode: vertical-rl; text-orientation: upright"
+                >
+                  HONRA
+                </p>
+              </div>
+              <div
+                class="card-body border-start border-warning text-center d-flex flex-column justify-content-center px-2"
+              >
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-award text-warning me-2"></i><%= data.honor
+                  %>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="card bg-dark mb-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">classificação geral</p>
+              </div>
               <div class="card-body">
-                <p class="card-title text-warning mb-0">clan</p>
-                <h5 class="card-text fs-3 text-white"><%= data.clan %></h5>
-                <p class="card-title text-warning mb-0">leaderboard position</p>
-                <h5 class="card-text fs-3 text-white">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-trophy text-warning"></i>
                   <%= data.leaderboardPosition %>
-                </h5>
-                <p class="card-title text-warning mb-0">skills</p>
-                <h5 class="card-text fs-3 text-white"><%= data.skills %></h5>
+                </h4>
+              </div>
+            </div>
+
+            <div
+              class="card bg-dark mb-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">clã</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-4 text-card">
+                  <i class="fas fa-flag-usa text-warning me-2"></i><%= data.clan
+                  %>
+                </h4>
               </div>
             </div>
           </div>
-          <div class="col px-3">
-            <div class="card bg-dark">
-              <img
-                src="/images/programming-rafiki.png"
-                class="card-img-top border-bottom border-warning"
-                alt="Programming Rafiki Image"
-              />
+
+          <div>
+            <div
+              class="card bg-dark mb-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">habilidades</p>
+              </div>
               <div class="card-body">
-                <p class="card-title text-warning mb-0">overall rank</p>
-                <h5 class="card-text fs-3 text-white">
-                  <%= data.ranks.overall.rank %>
-                </h5>
-                <p class="card-title text-warning mb-0">name</p>
-                <h5 class="card-text fs-3 text-white">
-                  <%= data.ranks.overall.name %>
-                </h5>
-                <p class="card-title text-warning mb-0">color</p>
-                <h5 class="card-text fs-3 text-white">
-                  <%= data.ranks.overall.color %>
-                </h5>
-                <p class="card-title text-warning mb-0">score</p>
-                <h5 class="card-text fs-3 text-white">
-                  <%= data.ranks.overall.score %>
-                </h5>
+                <h4 class="card-text fs-4 text-card">
+                  <i class="fas fa-laptop-code text-warning"></i><%= data.skills
+                  %>
+                </h4>
               </div>
             </div>
-          </div>
-          <div class="col px-3">
-            <div class="card bg-dark">
-              <img
-                src="/images/static-website-amico.png"
-                class="card-img-top border-bottom border-warning"
-                alt="Programming Rafiki Image"
-              />
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">desafios finalizados</p>
+              </div>
               <div class="card-body">
-                <p class="card-title text-warning mb-0">
-                  code challenges completed
-                </p>
-                <h5 class="card-text fs-3 text-white">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-check-double text-warning"></i>
                   <%= data.codeChallenges.totalCompleted %>
-                </h5>
-                <p class="card-title text-warning mb-0">
-                  code challenges authored
-                </p>
-                <h5 class="card-text fs-3 text-white">
-                  <%= data.codeChallenges.totalAuthored %>
-                </h5>
+                </h4>
               </div>
             </div>
           </div>
-          <% for(let lang of languages){ %>
-          <div class="col px-3">
-            <div class="card bg-dark">
-              <img
-                src="/images/programming-amico.png"
-                class="card-img-top border-bottom border-warning"
-                alt="Programming Amico Image"
-              />
+
+          <div>
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">ranking classificação</p>
+              </div>
               <div class="card-body">
-                <h5 class="card-title text-warning mb-0 fs-3"><%= lang %></h5>
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-chess-knight text-warning"></i>
+                  <%= data.ranks.overall.rank %>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">nome classificação</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-chess-rook text-warning"></i>
+                  <%= data.ranks.overall.name %>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-up" data-aos-duration="400">
+            <div class="card bg-dark">
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">cor classificação</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-tint text-warning"></i>
+                  <%= data.ranks.overall.color %>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">pontuação classificação</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-star-half-alt text-warning"></i>
+                  <%= data.ranks.overall.score %>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-warning">
+                <p class="text-warning fw-bold m-0">desafios criados</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text fs-2 text-card">
+                  <i class="fas fa-hammer text-warning"></i>
+                  <%= data.codeChallenges.totalAuthored %>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2
+          class="display-5 text-white fw-bold text-heading border-bottom border-dark pb-3"
+          data-aos="flip-right"
+          data-aos-duration="800"
+        >
+          Estatísticas por linguagem
+        </h2>
+        <section class="row row-cols-2 row-cols-md-2 row-cols-lg-5 py-4 g-3">
+          <% for(let language of languages) { %>
+          <div>
+            <div
+              class="card bg-dark"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
+              <div class="card-header border-bottom border-info">
+                <p class="text-info fw-bold m-0"><%= language[0] %></p>
+              </div>
+              <div class="card-body">
+                <p class="text-info fw-bold m-0">score</p>
+                <h4 class="card-text fs-2 text-card">
+                  <%= language[1].score %>
+                </h4>
+                <p class="text-info fw-bold m-0">rank</p>
+                <h4 class="card-text fs-2 text-card">
+                  <%= language[1].rank %>
+                </h4>
+                <p class="text-info fw-bold m-0">nome</p>
+                <h4 class="card-text fs-2 text-card">
+                  <%= language[1].name %>
+                </h4>
+                <p class="text-info fw-bold m-0">cor</p>
+                <h4 class="card-text fs-2 text-card">
+                  <%= language[1].color %>
+                </h4>
               </div>
             </div>
           </div>
           <% } %>
         </section>
-        <section class="row row-cols-1 mb-5">
-          <div class="col px-3">
-            <div class="card bg-dark">
-              <img
-                src="/images/static-website-amico.png"
-                class="card-img-top border-bottom border-warning"
-                alt="Programming Rafiki Image"
-              />
-              <div class="card-body">
-                <p class="card-title text-warning mb-0">challenges completed</p>
-                <% for(let challenge of challenges){ %>
-                <h5 class="card-text fs-5 text-white"><%= challenge.name %></h5>
-                <% } %>
-              </div>
+
+        <section class="row overflow-hidden mb-5 text-lg-start text-center">
+          <div class="col-md-6 col-lg-7">
+            <img
+              class="img-fluid"
+              src="/images/coding-bro.png"
+              alt="Coding Bro Image"
+              data-aos="zoom-in-up"
+              data-aos-duration="800"
+            />
+          </div>
+          <div
+            class="col-md-6 col-lg-5 d-flex flex-column justify-content-center"
+            data-aos="slide-left"
+            data-aos-duration="800"
+          >
+            <div>
+              <h3 class="text-white fs-1 fw-bold text-heading mb-3">
+                Linguagens usadas por <%= data.username %> nos desafios:
+              </h3>
+            </div>
+            <div>
+              <% for(let language of languages) { %>
+              <h5 class="badge-challenges">
+                <span class="badge bg-dark"><%= language[0] %> </span>
+              </h5>
+              <% } %>
+            </div>
+            <div>
+              <a
+                class="btn btn-outline-dark mt-4"
+                href="http://codewars.com/users/<%= data.username %> "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><%= data.username %> Profile
+              </a>
             </div>
           </div>
         </section>
         <% } %>
       </main>
 
-      <footer class="mt-auto text-white-50">
+      <footer class="mt-auto border-top border-dark border-1">
         <div class="d-flex justify-content-center mt-4">
           <a href="https://github.com/marckesin" class="mx-1" target="_blank"
             ><i class="fab fa-github-square fs-2 text-secondary"></i
@@ -3814,6 +3998,10 @@
         <p class="text-center text-muted mb-0">
           © <%= new Date().getFullYear() %> Codewars Statistics
         </p>
+
+        <a href="https://storyset.com/web" style="visibility: hidden"
+          >Web illustrations by Storyset</a
+        >
       </footer>
     </div>
 

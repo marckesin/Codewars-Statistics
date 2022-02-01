@@ -42,7 +42,7 @@ app.post("/", async (req, res) => {
   axios
     .get(`https://www.codewars.com/api/v1/users/${user}`)
     .then(response => {
-      const languages = Object.keys(response.data.ranks.languages);
+      const languages = Object.entries(response.data.ranks.languages);
 
       res.render("index", {
         data: response.data,
