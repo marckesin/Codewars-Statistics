@@ -26,9 +26,10 @@
     "node",
     "express",
     "api",
-    "mongodb"
+    "codewars",
+    "bootstrap5"
   ],
-  "description": "App para visualizar as estatísticas de usuários do https://www.codewars.com ",
+  "description": "App de visualização de estatísticas de programação de usuários do https://wwwcodewars.com ",
   "devDependencies": {
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
