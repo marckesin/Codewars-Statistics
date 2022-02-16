@@ -5,6 +5,8 @@ const logger = require("morgan");
 const path = require("path");
 const compression = require("compression");
 
+const port = process.env.PORT || 3000;
+
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
@@ -60,5 +62,7 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
+app.listen(port);
 
 module.exports = app;
