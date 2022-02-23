@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const path = require("path");
 const compression = require("compression");
+const helmet = require("helmet");
 
 const port = process.env.PORT || 3000;
 
@@ -12,6 +13,7 @@ const app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
+app.use(helmet.hidePoweredBy());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -35,7 +37,7 @@ app.post("/", async (req, res) => {
       challenges = response.data.data;
     })
     .catch(error => {
-      console.log(error);
+      next(error);
     });
 
   axios
@@ -50,8 +52,7 @@ app.post("/", async (req, res) => {
       });
     })
     .catch(error => {
-      console.log(error);
-      res.render("index", { data: false });
+      next(error);
     });
 });
 
