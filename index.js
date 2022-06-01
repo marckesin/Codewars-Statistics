@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.render("index", { data: false });
 });
 
-app.post("/", async (req, res) => {
+app.post("/", async (req, res, next) => {
   const { user } = req.body;
   let challenges;
 
@@ -52,7 +52,7 @@ app.post("/", async (req, res) => {
     });
 });
 
-app.use(function (err, req, res, next) {
+app.use((err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
 

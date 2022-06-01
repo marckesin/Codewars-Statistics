@@ -8,6 +8,8 @@ $bs-yellow-400: #ffbb09;
 body {
   background-color: $bs-yellow-100;
   position: relative;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 
   &::after {
     content: "";
