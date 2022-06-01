@@ -14,11 +14,6 @@ body {
   height: 100%;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
 img,
 picture,
 video,
@@ -53,6 +48,8 @@ a {
 body {
   background-color: #fcd905;
   position: relative;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 body::after {
   content: "";
