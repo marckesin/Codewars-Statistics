@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res, next) => {
   const { user } = req.body;
-  let challenges;
+  let challenges = {};
 
   await axios
     .get(
