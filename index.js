@@ -27,18 +27,18 @@ app.post("/", async (req, res) => {
 
   await axios
     .get(
-      `https://www.codewars.com/api/v1/users/${user}/code-challenges/completed?page=0`,
+      `https://www.codewars.com/api/v1/users/${user}/code-challenges/completed?page=0`
     )
-    .then(response => {
+    .then((response) => {
       challenges = response.data.data;
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 
   axios
     .get(`https://www.codewars.com/api/v1/users/${user}`)
-    .then(response => {
+    .then((response) => {
       const languages = Object.entries(response.data.ranks.languages);
 
       res.render("index", {
@@ -47,7 +47,7 @@ app.post("/", async (req, res) => {
         challenges: challenges,
       });
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 });
