@@ -26,7 +26,7 @@
     "codewars",
     "bootstrap5"
   ],
-  "description": "App de visualização de estatísticas de programação de usuários do https://wwwcodewars.com ",
+  "description": "App de visualização de estatísticas de programação do codewars.com",
   "devDependencies": {
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
