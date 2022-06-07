@@ -39,17 +39,21 @@ app.post("/", async (req, res, next) => {
   axios
     .get(`https://www.codewars.com/api/v1/users/${user}`)
     .then(response => {
-      const languages = Object.entries(response.data.ranks.languages);
+      const { languages } = response.data.ranks;
 
       res.render("index", {
         data: response.data,
-        languages: languages,
+        languages: Object.entries(languages),
         challenges: challenges,
       });
     })
     .catch(error => {
       next(error);
     });
+});
+
+app.all("*", (req, res) => {
+  res.status(404).send("Page Not Found.");
 });
 
 app.use((err, req, res, next) => {
