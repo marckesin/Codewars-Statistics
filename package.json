@@ -25,7 +25,8 @@
     "api",
     "codewars",
     "bootstrap5",
-    "heroku"
+    "heroku",
+    "frontend"
   ],
   "description": "App de visualização de estatísticas de programação do codewars.com",
   "devDependencies": {
