@@ -7,7 +7,7 @@
     "devstart": "nodemon index"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -25,7 +25,7 @@
     "api",
     "codewars",
     "bootstrap5",
-    "heroku",
+    "vercel",
     "frontend"
   ],
   "description": "App de visualização de estatísticas de programação do codewars.com",
